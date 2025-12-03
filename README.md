@@ -54,14 +54,16 @@ Um script na raiz instala e roda tudo com um único comando.
 
 Instale todas as dependências (Front e Back) de uma vez:
 
-Bash
+2. **Instale todas as dependências (Front e Back) de uma vez::**
+   ```bash
+   npm run install-all
+   Inicie o projeto (Front e Back simultaneamente):
 
-npm run install-all
-Inicie o projeto (Front e Back simultaneamente):
+3. **Rodar o Projeto::**
+   ```bash
+   npm run dev
 
-Bash
 
-npm run dev
 O Front-end abrirá automaticamente em: http://localhost:3000
 
 O Back-end rodará em: http://localhost:5000
