@@ -14,8 +14,9 @@ function About() {
       <h1 style={{ color: '#007bff', marginBottom: '10px' }}>📌 Sobre o TaskManager</h1>
       
       <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.6' }}>
-        Este projeto foi desenvolvido para simplificar a organização do seu dia a dia.
-        Crie, edite e gerencie seus lembretes de forma visual e intuitiva.
+          Desenvolvido durante a disciplina de <strong>Linguagem de Programação para Internet</strong>, este projeto demonstra a integração entre Front-end e Back-end.
+          <br />
+          Sua missão é simplificar a organização pessoal através de uma interface moderna e responsiva.
       </p>
 
       <hr style={{ border: '0', borderTop: '1px solid #eee', margin: '30px 0' }} />
@@ -31,7 +32,9 @@ function About() {
       </div>
       
       <div style={{ marginTop: '40px', fontSize: '0.9rem', color: '#999' }}>
-        Desenvolvido com 💙 por <strong>[Seu Nome]</strong>
+        Desenvolvido por <strong>Vinicius Paulo Pereira </strong> <br />
+        <strong>Guilherme Antônio de Souza</strong> <br />
+        <strong>Sarah Ferreira Vilela</strong>
       </div>
     </div>
   );

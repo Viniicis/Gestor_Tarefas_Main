@@ -93,10 +93,6 @@ function Editar() {
           <label>Data de Validade:</label>
           <input type="date" name="dataValidade" value={form.dataValidade} onChange={handleChange} required />
         </div>
-        <div className={styles.grupo}>
-          <label>URL Imagem:</label>
-          <input type="text" name="imagemUrl" value={form.imagemUrl} onChange={handleChange} />
-        </div>
         <button type="submit" className={styles.botaoSalvar}>Atualizar</button>
       </form>
     </div>
