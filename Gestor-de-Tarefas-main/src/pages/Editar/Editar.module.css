@@ -1,0 +1,17 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.formulario { display: flex; flex-direction: column; }
+.grupo { margin-bottom: 15px; }
+.grupo label { display: block; margin-bottom: 5px; font-weight: bold; }
+.grupo input, .grupo textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+.botaoSalvar {
+  background-color: #007bff; /* Azul para diferenciar do verde de criar */
+  color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer;
+}
+.botaoSalvar:hover { background-color: #0056b3; }

@@ -1,0 +1,104 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  /* Sombra leve para dar profundidade */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  position: relative; /* Para posicionar coisas absolutas se precisar */
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  border-color: #e0e0e0;
+}
+
+/* O container da imagem do lado esquerdo */
+.imagemContainer {
+  flex-shrink: 0; /* Impede a imagem de amassar */
+  margin-right: 20px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 50%; /* Círculo em volta do ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.conteudo {
+  flex: 1; /* Ocupa todo o espaço restante */
+}
+
+.titulo {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.descricao {
+  margin: 0 0 8px 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.data {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #888;
+  background-color: #f1f3f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Área dos botões */
+.botoes {
+  display: flex;
+  flex-direction: column; /* Botões um em cima do outro fica mais clean no mobile */
+  gap: 8px;
+  margin-left: 15px;
+  opacity: 0.7; /* Levemente transparente até passar o mouse */
+  transition: opacity 0.2s;
+}
+
+.card:hover .botoes {
+  opacity: 1;
+}
+
+.botaoEditar, .botaoDeletar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+
+.botaoEditar:hover {
+  background-color: #e3f2fd;
+  color: #007bff;
+}
+
+.botaoDeletar:hover {
+  background-color: #ffebee;
+  color: #dc3545;
+}

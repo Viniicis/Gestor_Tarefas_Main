@@ -1,0 +1,105 @@
+.container {
+  max-width: 600px; /* Largura ideal para leitura */
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px; /* Bordas bem arredondadas */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra suave e moderna */
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço uniforme entre cada campo */
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Estilizando TODOS os inputs e textareas de uma vez */
+.grupo input, 
+.grupo textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0; /* Borda cinza clara */
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  background-color: #fafafa;
+}
+
+/* Efeito quando clica no campo */
+.grupo input:focus, 
+.grupo textarea:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+/* -- ESTILO DOS ÍCONES (Melhoria visual) -- */
+.selecaoImagens {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Centraliza os ícones */
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.opcaoImagem {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.opcaoImagem:hover {
+  transform: translateY(-3px);
+  border-color: #bbb;
+}
+
+.imagemSelecionada {
+  border-color: #007bff;
+  background-color: #e6f2ff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.botaoSalvar {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botaoSalvar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.3);
+}

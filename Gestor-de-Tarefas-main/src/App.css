@@ -1,0 +1,51 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #666;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Botão de destaque para "Novo Lembrete" */
+.btn-destaque {
+  background-color: #007bff;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-destaque:hover {
+  background-color: #0056b3;
+}
+
+.conteudo-principal {
+  padding: 2rem;
+}
