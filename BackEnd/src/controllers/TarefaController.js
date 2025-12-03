@@ -10,8 +10,6 @@ module.exports = {
   // CRIAR
   async store(req, res) {
     const { titulo, descricao, dataValidade, imagemUrl } = req.body;
-    
-    // Se não tiver imagem, usa uma padrão
     const imagemFinal = imagemUrl || "https://cdn-icons-png.flaticon.com/512/2921/2921222.png";
 
     const tarefa = await Tarefa.create({
@@ -30,12 +28,10 @@ module.exports = {
     return res.json({ message: "Deletado com sucesso" });
   },
 
-  // ADICIONE ESTA FUNÇÃO DENTRO DO MODULE.EXPORTS:
   async update(req, res) {
     try {
       const { titulo, descricao, dataValidade, imagemUrl } = req.body;
 
-      // Encontra pelo ID e atualiza, retornando o novo dado (new: true)
       const tarefaAtualizada = await Tarefa.findByIdAndUpdate(
         req.params.id,
         { titulo, descricao, dataValidade, imagemUrl },
