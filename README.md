@@ -44,7 +44,7 @@ Um script na raiz instala e roda tudo com um único comando.
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/Viniicis/Gestor_Tarefas_Main.git](https://github.com/Viniicis/Gestor_Tarefas_Main.git)
+   git clone https://github.com/Viniicis/Gestor_Tarefas_Main.git
    cd Gestor_Tarefas_Main
 
 
