@@ -57,7 +57,7 @@ Instale todas as dependências (Front e Back) de uma vez:
 2. **Instale todas as dependências (Front e Back) de uma vez::**
    ```bash
    npm run install-all
-   Inicie o projeto (Front e Back simultaneamente):
+   
 
 3. **Rodar o Projeto::**
    ```bash
