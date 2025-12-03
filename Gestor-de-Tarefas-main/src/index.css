@@ -14,8 +14,8 @@ code {
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif; /* Usa a nova fonte */
-  background-color: #f4f7f6; /* Um cinza bem clarinho, moderno */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

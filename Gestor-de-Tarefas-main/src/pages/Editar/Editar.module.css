@@ -11,7 +11,7 @@
 .grupo label { display: block; margin-bottom: 5px; font-weight: bold; }
 .grupo input, .grupo textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
 .botaoSalvar {
-  background-color: #007bff; /* Azul para diferenciar do verde de criar */
+  background-color: #007bff;
   color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer;
 }
 .botaoSalvar:hover { background-color: #0056b3; }

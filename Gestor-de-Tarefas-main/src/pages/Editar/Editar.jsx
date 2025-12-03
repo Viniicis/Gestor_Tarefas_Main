@@ -14,7 +14,6 @@ function Editar() {
     imagemUrl: ''
   });
 
-  // Novo estado para controlar o carregamento
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,17 +21,14 @@ function Editar() {
       try {
         const response = await axios.get(`http://localhost:5000/tarefas`); 
         
-        // Procura a tarefa pelo ID
         const tarefaAtual = response.data.find(t => t._id === id);
         
-        // SE NÃO ACHAR A TAREFA, NÃO TENTE ACESSAR OS DADOS
         if (!tarefaAtual) {
           alert("Tarefa não encontrada!");
-          navigate('/'); // Volta para home
+          navigate('/'); 
           return;
         }
 
-        // Formata a data com segurança
         let dataFormatada = '';
         if (tarefaAtual.dataValidade) {
             dataFormatada = tarefaAtual.dataValidade.split('T')[0];
@@ -45,7 +41,7 @@ function Editar() {
           imagemUrl: tarefaAtual.imagemUrl || ''
         });
         
-        setLoading(false); // Dados carregados com sucesso
+        setLoading(false); 
 
       } catch (error) {
         console.error("Erro:", error);
@@ -72,7 +68,6 @@ function Editar() {
     }
   };
 
-  // Enquanto estiver carregando, mostra apenas um texto, para não quebrar a tela
   if (loading) {
       return <div className={styles.container}><p>Carregando dados da tarefa...</p></div>;
   }

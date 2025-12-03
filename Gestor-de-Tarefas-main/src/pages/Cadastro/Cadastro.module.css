@@ -1,10 +1,10 @@
 .container {
-  max-width: 600px; /* Largura ideal para leitura */
+  max-width: 600px;
   margin: 40px auto;
   padding: 40px;
   background-color: #ffffff;
-  border-radius: 16px; /* Bordas bem arredondadas */
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra suave e moderna */
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
 h2 {
@@ -17,7 +17,7 @@ h2 {
 .formulario {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espaço uniforme entre cada campo */
+  gap: 20px;
 }
 
 .grupo {
@@ -32,12 +32,11 @@ h2 {
   font-weight: 600;
 }
 
-/* Estilizando TODOS os inputs e textareas de uma vez */
 .grupo input, 
 .grupo textarea {
   width: 100%;
   padding: 12px 15px;
-  border: 2px solid #e0e0e0; /* Borda cinza clara */
+  border: 2px solid #e0e0e0;
   border-radius: 8px;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -46,7 +45,6 @@ h2 {
   background-color: #fafafa;
 }
 
-/* Efeito quando clica no campo */
 .grupo input:focus, 
 .grupo textarea:focus {
   border-color: #007bff;
@@ -54,11 +52,10 @@ h2 {
   box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
 }
 
-/* -- ESTILO DOS ÍCONES (Melhoria visual) -- */
 .selecaoImagens {
   display: flex;
   gap: 15px;
-  justify-content: center; /* Centraliza os ícones */
+  justify-content: center; 
   margin-top: 10px;
   flex-wrap: wrap;
 }

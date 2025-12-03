@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px; /* Aumentei a largura máxima */
+  max-width: 1200px; 
   margin: 0 auto;
 }
 
@@ -14,14 +14,11 @@
   margin-bottom: 10px;
 }
 
-/* --- MUDANÇA PRINCIPAL AQUI: CSS GRID --- */
 .lista {
   display: grid;
-  /* Cria colunas automáticas com no mínimo 300px de largura */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px; /* Espaço entre os cards */
+  gap: 25px;
 }
-/* --------------------------------------- */
 
 .vazio {
   text-align: center;

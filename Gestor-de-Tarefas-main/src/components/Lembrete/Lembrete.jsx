@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // <--- Importe o Link
+import { Link } from 'react-router-dom'; 
 import styles from './Lembrete.module.css';
 
 function Lembrete({ dados, aoDeletar }) {
@@ -18,12 +18,10 @@ function Lembrete({ dados, aoDeletar }) {
       </div>
 
       <div className={styles.botoes}>
-        {/* BOTÃO EDITAR */}
         <Link to={`/editar/${dados._id}`} className={styles.botaoEditar} title="Editar">
           ✏️
         </Link>
 
-        {/* BOTÃO DELETAR */}
         <button className={styles.botaoDeletar} onClick={() => aoDeletar(dados._id)} title="Excluir">
           🗑️
         </button>

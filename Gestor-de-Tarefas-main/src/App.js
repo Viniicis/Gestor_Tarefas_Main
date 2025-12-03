@@ -9,7 +9,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app-container">
-        {/* Navbar melhorado com classes CSS */}
         <header className="main-header">
           <h1 className="logo">📌 TaskManager</h1>
           <nav className="main-nav">

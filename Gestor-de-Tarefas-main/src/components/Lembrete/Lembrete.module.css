@@ -4,11 +4,10 @@
   background-color: white;
   border-radius: 12px;
   padding: 20px;
-  /* Sombra leve para dar profundidade */
   box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
   border: 1px solid #f0f0f0;
   transition: all 0.3s ease;
-  position: relative; /* Para posicionar coisas absolutas se precisar */
+  position: relative;
   overflow: hidden;
 }
 
@@ -18,13 +17,12 @@
   border-color: #e0e0e0;
 }
 
-/* O container da imagem do lado esquerdo */
 .imagemContainer {
-  flex-shrink: 0; /* Impede a imagem de amassar */
+  flex-shrink: 0; 
   margin-right: 20px;
   background-color: #f8f9fa;
   padding: 10px;
-  border-radius: 50%; /* Círculo em volta do ícone */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +35,7 @@
 }
 
 .conteudo {
-  flex: 1; /* Ocupa todo o espaço restante */
+  flex: 1;
 }
 
 .titulo {
@@ -64,13 +62,12 @@
   font-weight: 500;
 }
 
-/* Área dos botões */
 .botoes {
   display: flex;
-  flex-direction: column; /* Botões um em cima do outro fica mais clean no mobile */
+  flex-direction: column; 
   gap: 8px;
   margin-left: 15px;
-  opacity: 0.7; /* Levemente transparente até passar o mouse */
+  opacity: 0.7; 
   transition: opacity 0.2s;
 }
 
